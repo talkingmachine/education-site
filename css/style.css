@@ -95,7 +95,7 @@ div.left-side {
   background: #FF6433;
   border-radius: 12px;
   padding: 16px 40px;
-
+  display: block;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
@@ -103,6 +103,10 @@ div.left-side {
   line-height: 175%;
   color: #FFFFFF;
   margin-right: 33px;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: all .1s;
 }
 .video-btn {
   display: flex;
@@ -158,6 +162,15 @@ color: #1E1B1B;
   line-height: 24px;
   color: #000000;
   opacity: 0.7;
+}
+.text16-600 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1E1B1B;
+  opacity: 0.6;
 }
 .promo-block {
   border-radius: 59px;
@@ -240,9 +253,21 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.services-grid__item img {
+.services-grid__item svg {
   margin: auto;
   margin-bottom: 0;
+}
+.services-grid__item:hover path {
+  fill: white;
+  transition: all .1s;
+}
+.services-grid__item:hover p {
+  color: white;
+  transition: all .1s;
+}
+.services-grid__item:hover{
+  background: #FF6433;
+  transition: all .1s;
 }
 .services-grid__item p {
   text-align: center;
@@ -258,3 +283,118 @@ h2 {
 .more-info-link img {
   margin-left: 16px;
 }
+/*-----------------------help------------------------*/
+.wrapper-help {
+  margin-top: 135px;
+  margin-bottom: 140px;
+}
+.help {
+  width: 1050px;
+  height: 527px;
+  display: flex;
+}
+.help__left-side {
+  margin-right: 130px; 
+  min-width: 525px;
+}
+.help__left-side__h {
+  text-align: left;
+  margin-bottom: 16px;
+}
+.help__left-side__description {
+  max-width: 420px;
+  margin-bottom: 32px;
+}
+.help__more-btn {
+  width:177px;
+  height: 64px;
+}
+/*-----*/
+.help__right-side {
+  display: flex;
+}
+.number-block {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.dotted-line {
+  margin:20px auto;
+=
+}
+.desc-block {
+  width: 340px;
+}
+.help__right-side__block {
+  display: flex;
+}
+.block-description {
+  margin-top: 15px;
+}
+.block-description__d {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+h4 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  color: #1E1B1B;
+}
+/*--------------------promo-----------------------*/
+.wrapper-promo {
+  background: url("../images/promo/car-out.jpg") 0px 0px / 980px 500px no-repeat,
+              url('../images/promo/car-in.jpg') right top / 950px 500px no-repeat,
+              #F2F2F2;
+}
+.promo-panel {
+  width: 730px;
+  height: 500px;
+  background: #FF6433;
+  display: flex;
+  flex-direction: column;
+}
+.contact-us {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+
+  display: block;
+  margin: 128px 70px 50px 75px;
+}
+.contact-us-btn {
+  width: 180px;
+  background: #1E1B1B;
+  margin-left: 60px;
+}
+.promo-row {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.row-item__description {
+  opacity: 0.7;
+}
+.row-item__number {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  text-align: left;
+  letter-spacing: -0.03em;
+  color: #661CE7;
+}
+/*---------------------brands----------------------*/
+.wrapper-brands {
+  background: #E2E6E9;
+}
+
