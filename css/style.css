@@ -348,8 +348,9 @@ h4 {
 /*--------------------promo-----------------------*/
 .wrapper-promo {
   background: url("../images/promo/car-out.jpg") 0px 0px / 980px 500px no-repeat,
-              url('../images/promo/car-in.jpg') right top / 950px 500px no-repeat,
+              url('../images/promo/car-in.jpg') right top / 960px 500px no-repeat,
               #F2F2F2;
+  height: 710px;
 }
 .promo-panel {
   width: 730px;
@@ -379,6 +380,7 @@ h4 {
   display: flex;
   margin-top: 50px;
   justify-content: space-around;
+
 }
 .row-item__description {
   opacity: 0.7;
@@ -397,4 +399,78 @@ h4 {
 .wrapper-brands {
   background: #E2E6E9;
 }
+.brands {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.brands-header {
+  margin-top: 130px;
+  align-self: center;
+}
+.brands-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+/*---------------------blog----------------------------*/
+.wrapper-blog {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.blog__header {
+  margin-bottom: 50px;
+}
+.categories {
+  display: flex;
+  margin-bottom: 50px;
+}
+.blog__category {
+  margin-right: 30px;
 
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  color: #1E1B1B;
+}
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 64px;
+  column-gap: 32;
+}
+.blog__card {
+  display: flex;
+  flex-direction: column;
+  width: 405px;
+  height: 606px;
+}
+.blog__card:hover img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+.post-time {
+  color: #939191;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.card-text__header {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  color: #1E1B1B;
+  margin-bottom: 15px;
+}
+.card-text__description {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+}
