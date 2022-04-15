@@ -474,3 +474,109 @@ h4 {
   line-height: 28px;
   color: #232536;
 }
+/*----------------------reviews----------------------*/
+.wrapper-reviews {
+  margin-top: 136px;
+  background: #F2F2F2;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+}
+.reviews-header {
+  margin:  128px auto 76px auto;
+  text-align: center;
+}
+.reviews-slider {
+  display: flex;
+}
+.review-slide {
+  display: flex;
+  flex-direction: column;
+  padding: 72px;
+  margin: 0 24px 0 24px;
+  background: white;
+  border: 1px solid rgba(172, 172, 172, 0.29);
+  box-sizing: border-box;
+  border-radius: 6px;
+  max-height: 376px;
+  max-width: 616px;
+}
+.user-info {
+  display: flex;
+}
+.user-info img {
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.user-review {
+  margin-top: 24px;
+}
+.slider-nav {
+  display: flex;
+  position: relative;
+}
+.nav-dots {
+  position: absolute;
+  left: calc(50% - 96px);
+  margin-top: 23px;
+}
+.slick-dots {
+  margin-left: auto;
+  display: flex;
+}
+.slick-dots li button {
+  margin: 8px;
+  width: 32px;
+  background-color: transparent;
+  height: 32px;
+  font-size: 0px;
+  display: flex;
+  align-items: center;
+}
+/*.slick-dots li button {
+  margin: 8px;
+  width: 32px;
+  height: 32px;
+  font-size: 0px;
+  background: url("../images/slide-dot-line.svg") no-repeat 0 50%;
+}*/
+.slick-dots li button::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: #C4C4C4;
+}
+.slick-dots li.slick-active button::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: #FF6433;
+}
+.slider-arrows {
+  display: flex;
+  margin: 23px;
+  margin-left: auto;
+}
+.slider-arrow-circle {
+  background: white;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  padding: 14px;
+  padding-top: 16px;
+}
+.prev {
+  margin-right: 24px;
+}
+.slider-arrow-circle:hover {
+  transition: all .1s;
+  transform: scale(1.3);
+  background: black;
+}
+.slider-arrow-circle:hover path{
+  fill: white;
+}
+
+
