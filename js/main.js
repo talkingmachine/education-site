@@ -20,4 +20,18 @@ $(function () {
     appendDots: $(".nav-dots"),
   })
 
+  $(".question").on("click", function(e) {
+    e.preventDefault();
+    let flag = true;
+    if ($(this).hasClass("question--active") === true) {
+      flag = false;
+    }
+    $(".question").removeClass("question--active")
+    $(".question").children(".question-text").slideUp(250, false)
+    if (flag) {
+      $(this).toggleClass("question--active")
+      $(this).children(".question-text").slideToggle(250, false)
+    }
+  })
+
 });

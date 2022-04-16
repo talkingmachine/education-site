@@ -49,7 +49,7 @@ img.separator {
 div.assistance-wrapper img {
   padding-right: 15px;
 }
-p.text15-600 {
+text15-600 {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 500;
@@ -58,7 +58,7 @@ p.text15-600 {
   color: #1E1B1B;
   opacity: 0.7;
 }
-p.text18-600 {
+.text18-600 {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
@@ -476,7 +476,7 @@ h4 {
 }
 /*----------------------reviews----------------------*/
 .wrapper-reviews {
-  margin-top: 136px;
+  padding-bottom: 128px;
   background: #F2F2F2;
 }
 .reviews {
@@ -578,5 +578,66 @@ h4 {
 .slider-arrow-circle:hover path{
   fill: white;
 }
+/*---------------------------FAQ--------------------------------*/
+.wrapper-faq {
+  padding-top: 117px;
+  background: #E2E6E9;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+}
+.faq__header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.faq__list {
+  align-self: center;
+}
+.question {
+  background: white;
+  padding: 40px;
+  margin-bottom: 12px;
+  width: 896px; 
+  position: relative;
+}
+.question-header {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #1E1B1B;
 
+}
+.question-button {
+  background: #FF6433;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 40px;
+  top: 32px;
+}
+.question-button::before, .question-button::after {
+  content: "";
+  top: 24px;
+  right:16px;
+  position: absolute;
+  background: white;
+  width: 17px;
+  height: 2px;
+}
+.question-button::before {
+  transform: rotate(90deg);
+}
 
+.question--active .question-button::before{
+  transform: rotate(0deg);
+  transition: all .1s;
+}
+.question-text {
+  color: #939191; 
+  margin-top: 16px;
+}
