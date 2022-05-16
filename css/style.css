@@ -346,6 +346,7 @@ h4 {
   background:#F2F2F2;
   height: 500px;
   display: flex;
+  justify-content: space-between;
 }
 .wrapper-promo__left {
   background: url("../images/promo/car-out.jpg") 0px 0px / cover no-repeat;
@@ -358,7 +359,7 @@ h4 {
 }
 .promo {
   position: absolute;
-  right: 0;
+  right: -20%;
 }
 .promo-panel {
   width: 730px;
