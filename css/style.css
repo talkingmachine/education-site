@@ -688,7 +688,7 @@ dd{
 }
 /*----------------------------map------------------------------*/
 .wrapper-map {
-  background: url("../images/map-background.jpg");
+  background: url("../images/map-background.jpg") 0px 0px / cover no-repeat;
   height: 448px;
 }
 .map {
