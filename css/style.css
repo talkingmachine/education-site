@@ -6,6 +6,7 @@
 header, section, footer {
   max-width: 1310px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .header__top {
   margin-top: 30px;
@@ -238,13 +239,17 @@ h2 {
 }
 .offer-section__services-grid {
   display: grid;
+  max-height: 500px;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 232px);
   gap: 8px;
   margin-top: 64px;
 }
 .services-grid__item {
-  min-width: 316px;
-  min-height: 232px;
+  display: flex;
+  max-width: 316px;
+  max-height: 232px;
+  
   background: white;
   display: flex;
   flex-direction: column;
@@ -358,7 +363,7 @@ h4 {
   width: 100%;
 }
 .promo-panel {
-  width: 730px;
+  max-width: 730px;
   height: 500px;
   background: #FF6433;
   display: flex;
@@ -374,8 +379,6 @@ h4 {
   line-height: 140%;
   letter-spacing: -0.03em;
   color: #FFFFFF;
-
-  display: block;
   margin: 128px 70px 50px 75px;
 }
 .contact-us-btn {
@@ -435,7 +438,6 @@ h4 {
 }
 .blog__category {
   margin-right: 30px;
-
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
@@ -448,13 +450,19 @@ h4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 64px;
-  column-gap: 32;
+  column-gap: 20px;
 }
 .blog__card {
   display: flex;
   flex-direction: column;
-  width: 405px;
-  height: 606px;
+  max-width: 405px;
+  max-height: 606px;
+}
+.blog__card img {
+  display: flex;
+  flex-direction: column;
+  max-width: 405px;
+  max-height: 606px;
 }
 .blog__card:hover img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
@@ -542,13 +550,6 @@ h4 {
   display: flex;
   align-items: center;
 }
-/*.slick-dots li button {
-  margin: 8px;
-  width: 32px;
-  height: 32px;
-  font-size: 0px;
-  background: url("../images/slide-dot-line.svg") no-repeat 0 50%;
-}*/
 .slick-dots li button::before {
   content: "";
   height: 3px;
@@ -744,6 +745,8 @@ iframe {
 }
 /*==========================MEDIA===============================*/
 /*==========================MEDIA===============================*/
+@media (max-width: 1200px) {
+}
 @media (max-width: 900px) {
   .header__top {
     display: none;
@@ -769,5 +772,8 @@ iframe {
     background: black;
     border-radius: 3px;
     margin-bottom: 3px;
+  }
+  section, header, footer {
+    padding: 0 15px;
   }
 }
