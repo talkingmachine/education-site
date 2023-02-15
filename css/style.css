@@ -6,7 +6,7 @@
 header, section, footer {
   max-width: 1310px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 25px;
 }
 .header__top {
   margin-top: 30px;
@@ -16,6 +16,7 @@ header, section, footer {
 }
 .header__top-logo {
   align-self: center;
+  margin-right: 20px;
 }
 .header__top-nav {
   margin: auto 0;
@@ -35,6 +36,7 @@ header, section, footer {
   font-size: 16px;
   line-height: 28px;
   color: #1E1B1B;
+  white-space: nowrap;
 }
 .header__assistance {
   align-self: flex-end;
@@ -655,7 +657,7 @@ h4 {
   padding-bottom: 505px;
 }
 form {
-  width: 626px;
+  max-width: 626px;
   margin: 48px 0 48px 0;
 }
 .form__content {
@@ -681,9 +683,6 @@ textarea {
 .form__info {
   margin: 48px;
   margin-left: 139px;
-}
-dd{
-  margin-bottom: 32px;
 }
 /*----------------------------map------------------------------*/
 .wrapper-map {
@@ -736,6 +735,7 @@ iframe {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer a {
   color: white;
@@ -754,82 +754,50 @@ iframe {
     flex-direction: column;
   }
   .help__left-side {
+    margin-right: 0;
     margin-bottom: 130px; 
     min-width: 525px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .help__left-side__h {
+  .help__left-side__h, .help__left-side__description {
+    max-width: 800px;
     text-align: center;
     margin-bottom: 16px;
   }
-  /*-----*/
+  .help__left-side__description {
+    max-width: 600px;
+  }
   .help__right-side {
     display: none;
   }
   /*========help========*/
   /*========promo========*/
-  .wrapper-promo {
-    background:#F2F2F2;
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .wrapper-promo__left {
-    background: url("../images/promo/car-out.jpg") 0px 0px / cover no-repeat;
-    width: 100%;
-    position: relative;
-  }
   .wrapper-promo__rigth {
-    background: url('../images/promo/car-in.jpg') right top / cover no-repeat;
-    width: 100%;
-  }
-  .promo-panel {
-    max-width: 730px;
-    height: 500px;
-    background: #FF6433;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0;
-  }
-  .contact-us {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 140%;
-    letter-spacing: -0.03em;
-    color: #FFFFFF;
-    margin: 128px 70px 50px 75px;
-  }
-  .contact-us-btn {
-    width: 180px;
-    background: #1E1B1B;
-    margin-left: 60px;
-  }
-  .promo-row {
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: space-around;
-  
-  }
-  .row-item__description {
-    opacity: 0.7;
-  }
-  .row-item__number {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 58px;
-    line-height: 76px;
-    text-align: left;
-    letter-spacing: -0.03em;
-    color: #661CE7;
+    width: 50%;
   }
   /*========promo========*/
+  /*========blog========*/
+  .blog__header {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .blog-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 64px;
+    column-gap: 20px;
+  }
+  /*========blog========*/
+  /*========reviews========*/
+  .user-review {
+    max-height: 200px;
+  }
+  /*========reviews========*/
+  .footer-social {
+    min-width: 178px;
+  }
 }
 @media (max-width: 900px) {
   .header__top {
